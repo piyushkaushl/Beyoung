@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     if(JSON.parse(localStorage.getItem("loggedin")) || false){
       setIsAuthenticated(true);
-    }
+    } 
     async function fetchData() {
       try {
         console.log("before fetching");

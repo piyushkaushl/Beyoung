@@ -29,7 +29,7 @@ const ProductCaroseul= ({title, products}) => {
     console.log(product)
     return (
       <Link to={`/productDetails/${product._id}`}>
-      <div className="min-w-xl rounded overflow-hidden shadow-lg m-2">
+      <div className="min-w-xl rounded overflow-hidden shadow-lg m-2" title={product.name}>
         <img className="min-w-full min-h-128 object-cover" src={product.displayImage} alt={product.name} />
         <div className="px-4 py-4">
           <div className="font-bold text-lg mb-1">{product.name}</div>

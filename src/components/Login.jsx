@@ -13,7 +13,7 @@ const Login = () => {
       return;
     }
 
-    // Simulating user authentication
+
     const existingUsers = JSON.parse(localStorage.getItem('users') || '[]');
     const user = existingUsers.find(user => user.email === email && user.password === password);
 
